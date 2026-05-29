@@ -1,76 +1,38 @@
 :root {
-    --primary-color: #0B4F6C;
-    --secondary-color: #01BAEF;
-    --accent1-color: #1C2541;
-    --heading-font: Georgia, serif;
-    --body-font: Arial, sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    --primary-color: #1b4965;
+    --secondary-color: #62b6cb;
+    --accent1-color: #bee9e8;
+    --accent2-color: #ffffff;
 }
 
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
-
-header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
-/* HEADER */
 
 header {
     display: grid;
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 200px auto;
     align-items: center;
-    background-color: var(--secondary-color);
-    padding: 10px;
+    background-color: var(--primary-color);
+    padding: 20px;
 }
 
 header img {
-    width: 100px;
+    width: 120px;
 }
-
-/* NAVIGATION */
 
 nav {
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
 nav a {
+    color: white;
     text-decoration: none;
-    color: var(--accent1-color);
-    font-weight: bold;
+    font-size: 18px;
     padding: 10px;
 }
-
-/* HEADINGS */
-
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-/* GENERAL SPACING */
-
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
-/* HERO SECTION */
 
 .hero {
     position: relative;
@@ -79,22 +41,17 @@ article {
 .hero img {
     display: block;
     width: 100%;
-    height: auto;
 }
-
-/* HERO TITLE */
 
 .hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
     text-align: center;
-    background-color: rgba(28, 37, 65, 0.8);
     color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
 }
-
-/* HERO ARTICLE */
 
 .hero article {
     position: absolute;
@@ -102,38 +59,69 @@ article {
     left: 20px;
     right: 20px;
     background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
 }
-
-/* EMPLOYEE IMAGE */
 
 .hero article img {
     float: right;
-    width: 125px;
+    width: 150px;
     margin-left: 15px;
-    border: 2px solid white;
 }
 
-/* FOOTER */
+.history {
+    padding: 40px;
+    text-align: center;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
+}
+
+.adventures {
+    padding: 40px;
+    text-align: center;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.adventure-gallery img {
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+}
 
 footer {
-    margin-top: 20px;
-    border-top: 1px solid #000;
-    text-align: center;
-    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
 }
 
-/* SOCIAL MEDIA */
-
-.socialmedia {
+.sociallinks {
     display: flex;
-    justify-content: center;
     gap: 15px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 40px;
+.sociallinks img {
+    width: 35px;
 }
