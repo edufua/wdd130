@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: #1b4965;
     --secondary-color: #62b6cb;
@@ -6,9 +12,12 @@
 }
 
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
 }
+
+/* HEADER */
 
 header {
     display: grid;
@@ -22,17 +31,26 @@ header img {
     width: 120px;
 }
 
+/* NAVIGATION */
+
 nav {
     display: flex;
     justify-content: space-around;
 }
 
 nav a {
-    color: white;
+    color: var(--accent2-color);
     text-decoration: none;
     font-size: 18px;
     padding: 10px;
 }
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+/* HERO SECTION */
 
 .hero {
     position: relative;
@@ -48,9 +66,9 @@ nav a {
     top: 20px;
     width: 100%;
     text-align: center;
-    color: white;
+    color: var(--accent2-color);
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .hero article {
@@ -68,9 +86,16 @@ nav a {
     margin-left: 15px;
 }
 
+/* HISTORY SECTION */
+
 .history {
     padding: 40px;
     text-align: center;
+    background-color: var(--accent1-color);
+}
+
+.history h2 {
+    margin-bottom: 20px;
 }
 
 .history-content {
@@ -84,9 +109,15 @@ nav a {
     width: 100%;
 }
 
+/* ADVENTURE SECTION */
+
 .adventures {
     padding: 40px;
     text-align: center;
+}
+
+.adventures h2 {
+    margin-bottom: 20px;
 }
 
 .adventure-gallery {
@@ -95,33 +126,38 @@ nav a {
     gap: 10px;
 }
 
-.adventure-gallery img {
-    width: 100%;
+.adventure-gallery figure {
+    flex: 1;
 }
 
-figure {
-    margin: 0;
+.adventure-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 figcaption {
     margin-top: 10px;
     font-size: 14px;
+    color: var(--primary-color);
 }
+
+/* FOOTER */
 
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--accent2-color);
     padding: 20px;
 }
 
-.sociallinks {
+.socialmedia {
     display: flex;
     gap: 15px;
 }
 
-.sociallinks img {
+.socialmedia img {
     width: 35px;
 }
