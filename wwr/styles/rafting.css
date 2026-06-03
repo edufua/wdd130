@@ -9,8 +9,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: #ffffff;
     color: #333;
+    background-color: #fff;
 }
 
 /* HEADER */
@@ -22,89 +22,42 @@ header {
     padding: 15px 20px;
 }
 
+/* LOGO */
 header img {
     width: 80px;
 }
 
-/* NAVIGATION */
-nav a {
+/* NAV (HEADER) */
+header nav a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
 }
 
-nav a:hover {
+/* NAV HOVER */
+header nav a:hover {
     color: #bee9e8;
 }
 
-/* HERO SECTION (ABOUT PAGE) */
-.hero {
-    position: relative;
-    text-align: center;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 40%;
-    width: 100%;
-    color: white;
-    font-size: 3rem;
-}
-
-.hero article {
-    display: flex;
-    gap: 15px;
+/* MAIN */
+main {
     padding: 20px;
-    background: #bee9e8;
 }
 
-.hero article img {
-    width: 150px;
-}
-
-/* HISTORY SECTION */
-.history {
-    padding: 30px;
+/* H1 */
+main h1 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.history-content {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-/* ADVENTURES */
-.adventures {
-    padding: 30px;
-    text-align: center;
-}
-
-.adventure-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.adventure-gallery img {
-    width: 200px;
-    border-radius: 10px;
-}
-
-/* CONTACT PAGE */
+/* COMPANY INFO */
 .company-info {
     text-align: center;
-    padding: 30px;
+    padding: 20px;
 }
 
+/* MAP */
 .company-info iframe {
     width: 100%;
     max-width: 600px;
@@ -119,12 +72,13 @@ nav a:hover {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 30px;
     text-align: center;
+    padding: 20px;
 }
 
 .employees figure {
     width: 200px;
+
 }
 
 .employees img {
@@ -134,15 +88,15 @@ nav a:hover {
 
 /* FORM */
 .contact-form {
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 20px;
 }
 
 .contact-form form {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
 }
 
 .contact-form input,
@@ -152,13 +106,14 @@ nav a:hover {
     border-radius: 5px;
 }
 
+/* BUTTON */
 .contact-form button {
     background-color: #1b4965;
     color: white;
     padding: 12px;
     border: none;
-    font-size: 16px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .contact-form button:hover {
@@ -174,7 +129,15 @@ footer {
     margin-top: 20px;
 }
 
-.socialmidia img {
+/* FOOTER NAV */
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+/* SOCIAL ICONS */
+.socialmedia img {
     width: 25px;
     margin: 0 5px;
 }
