@@ -32,6 +32,7 @@ header {
 
 header img {
     width: 80px;
+    height: auto;
 }
 
 /* NAVIGATION */
@@ -45,6 +46,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     padding: 8px 12px;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
@@ -56,7 +58,7 @@ nav a:hover {
 main {
     padding: 20px;
     max-width: 1100px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 /* HEADINGS */
@@ -66,8 +68,9 @@ h2 {
     margin-bottom: 15px;
 }
 
-/* COMPANY INFO */
-.company-info {
+/* COMPANY INFO & FORM CONTAINER */
+.company-info,
+.contact-form {
     background-color: var(--accent1-color);
     padding: 20px;
     border-radius: 10px;
@@ -80,83 +83,101 @@ iframe {
     border-radius: 10px;
 }
 
-/* EMPLOYEES SECTION */
+/* EMPLOYEES GRID SECTION */
 .employees {
     margin: 30px 0;
 }
 
-.employees figure {
-    background: #f8f8f8;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.employees img {
-    width: 100%;
-    max-width: 250px;
-    border-radius: 10px;
-}
-
-/* GRID FOR EMPLOYEES */
-.employees {
+.employee-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
 
-/* FORM */
-.contact-form {
-    background-color: var(--accent1-color);
-    padding: 20px;
+.employee-grid figure {
+    background: #f8f8f8;
+    padding: 15px;
     border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
+.employee-grid img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    height: auto;
+}
+
+/* FORM ELEMENTS */
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
-input,
+input[type="text"],
+input[type="email"],
 textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 100%;
 }
 
 label {
     font-weight: bold;
 }
 
+.radio-group,
+.checkbox-label {
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.radio-group label,
+.checkbox-label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
 button {
     background-color: var(--primary-color);
     color: white;
-    padding: 10px;
+    padding: 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: var(--secondary-color);
 }
 
-/* FOOTER */
+/* FOOTER & SOCIAL MEDIA */
 footer {
-    margin-top: 30px;
+    margin-top: 40px;
     background-color: var(--primary-color);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 30px 20px;
 }
 
 .socialmedia {
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
 }
 
 .socialmedia img {
     width: 30px;
-    margin: 0 5px;
+    height: auto;
 }
+
+```
