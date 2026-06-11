@@ -1,61 +1,87 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Janet Agyapong | WDD 130</title>
     <meta name="description"
-      content=" Explore Janet Aggyyapong BYU-Idaho WDD 130 course home page, featuring web fundamentals, develoment project, and essential Html/Css learning resources.">
-    <meta name="author" content="Janet Agyapong ">
+      content="Welcome to White Water Rafting. Explore thrilling river adventures and unforgettable experiences.">
 
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
+    <meta name="author" content="Janet Agyapong">
 
-<body>
+    <link rel="stylesheet" href="styles/rafting.css">
     <header>
+        <img src="images/logo.png" alt="White Water Rafting Logo">
+
         <nav>
-            <a href="#">Home</a>
-            <a href="wwr/">Rafting Website</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-    <main>
-        <h1>Janet Agyyapong | WDD 130</h1>
-        <img src="images/profile.jpg" alt="Helllo, my name is Janet Agyapong" width="200">
-        <p>My name is Janet Agyapong and i live in Accra, Ghana. I love playing Golf and
-            wrriting of poems. I am currently studying Web Design and Development and am curious to
-            learn
-            more about what this course has installed. Am looking forward to
-            develop my personal website, increase my knowledge and working with many prestigious
-            companies.
-        </p>
-    </main>
-    <aside>
-        <h2> Accra Ghana</h2>
-        <img src="images/accra-landscape.jpg" alt=" Landscape of Accra Ghana  ">
-        <p>
-            The image shows a wide, high-angle view of Accra, Ghana, designed to highlight the
-            city's urban
-            landscape and activity.
-            In the foreground, you can see a major roundabout with heavy traffic, including cars
-            moving in
-            different directions. Near it stands a tall monument with the word “ACCRA”, which is a
-            recognizable
-            symbol often used to represent the capital city.
-            Moving further back, the scene shows a mix of:
-            Modern buildings and high-rise towers (central business district area)
-            Smaller residential and commercial buildings
-            Green spaces with trees and landscaped areas
-            In the distance, the Atlantic Ocean is visible, showing Accra’s coastal location. The
-            skyline is set
-            under a partly cloudy sky, giving the city a bright, daytime atmosphere.
-            Overall, it represents Accra as a growing coastal capital city—busy roads, developing
-            infrastructure, and a blend of nature and urban development all in one view.
-        </p>
-    </aside>
-    <footer>
-        <p>&copy;2026🌴Janet Agyapong🌴Accra, Ghana.</p>
-    </footer>
-</body>
 
-</html>
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Rafting Adventure">
+            <h1>Experience the Thrill of White Water Rafting</h1>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <h2>Ready for Your Next Adventure?</h2>
+            <p>Check out our exciting rafting trips today.</p>
+            <a href="trips.html" class="button">View Trips</a>
+        </section>
+
+        <!-- GRID -->
+        <section class="home-grid">
+
+            <div class="grid-item">
+                <img src="images/purpose.jpg" alt="Purpose">
+                <h2>Our Purpose</h2>
+                <p>We provide safe and exciting rafting experiences for all skill levels.</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="images/adventure.jpg" alt="Adventure">
+                <h2>Our Adventures</h2>
+                <p>Explore rivers, rapids, and unforgettable outdoor experiences.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 White Water Rafting | Janet Agyapong</p>
+
+        <div class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="Twitter">
+            </a>
+
+            <a href="https://instargram.com">
+                <img src="images/instargram.png" alt="Instargram">
+            </a>
+        </div>
+    </footer>
